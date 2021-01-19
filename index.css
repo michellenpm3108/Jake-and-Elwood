@@ -150,8 +150,13 @@ main {
 footer {
     background-color: #EBEBEB;
     text-align: center;
-    padding: 3em 2em 1em;
+    padding: 2em;
     color: rgba(0, 0, 0, 0.37);
+
+}
+.footer-info {
+    width: 70%;
+    margin: 0 auto;
 
 }
 .footer-info p {
