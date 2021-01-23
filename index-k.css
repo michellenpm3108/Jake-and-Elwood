@@ -42,7 +42,7 @@ h1, h2, strong {
 }
 .btn-primary {
     background: #FFE600;
-    justify-self: flex-start;
+    justify-self: start;
     color: black;
 }
 
@@ -54,9 +54,15 @@ h1, h2, strong {
     grid-column: 2/-2;
 }
 .hero {
+    background-image:url(/img/hero-bg.jpg);
+    background-position: center;
     background-color: #000000;
     color: #FFFFFF;
     padding: 4em 0;
+}
+.hero-title,
+.subtitle {
+    padding-right: 7em;
 }
 
 /* ----------------
@@ -100,4 +106,31 @@ footer>* {
 }
 .social-link {
     color: black;
+}
+
+@media (min-width: 700px) {
+    .main-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 4em 2em;
+        gap: 2em;
+    }
+    .hero > * { 
+        grid-column: 1/-2;
+    }
+   
+    .info > * {
+        grid-column: span 1;
+    }
+
+    .footer-main {
+        grid-column: 1/span 2;
+        text-align: left;
+    }
+    .footer-fineprint{
+        margin: 3em 0 0;
+    }
+    .social-list {
+        grid-column: -1/span 1;
+        order: 0;
+    }
 }
