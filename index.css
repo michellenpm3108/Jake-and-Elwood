@@ -43,6 +43,14 @@ h1 {
     grid-column: 2/ span 1;
 }
 
+/* big-screen */
+@media (min-width: 600px) {
+    .main-grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(150px,320px)) minmax(1em, 1fr);
+    }
+    .hero > * {
+        grid-column: 2/-2;
+    }
 
 /* hero section  */
 .hero {
