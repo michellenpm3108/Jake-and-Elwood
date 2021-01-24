@@ -1,169 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
 *{
     box-sizing: border-box;
+    line-height: 1.6;
 }
+
 body {
     margin: 0;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-}
-/* ----------- */
-/* TOP SECTION */
-/* ----------- */
-
-.top-section {
-    background-image: url(img/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    padding: 0 2em;
+    color: #404040;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    /* position: relative; */
-}
-
-svg {
-    cursor: pointer;
-}
-#exit-btn{
-    padding-bottom: 2em;
-    width: 1em;
-    transform: rotate(180deg);
-}
-#menu-btn{
-    margin-top: 2em;
-}
-/* navigation */
-nav {
-    position: absolute;
-    height: 100vh;
-    width: 40vw;
-    background-color: #404040;
-    top: 0;
-    right: 0;
-    opacity: 97%;
-    display: none;
-    padding: 0 2em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    padding: 1em 0;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 500;
-    padding: .25em 0;
-}
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #FFE600;
-}
-.active {
-    border-bottom: 2px solid #FFE600;
-}
-/* logo */
-.logo {
-    background-color:#FFE600;
-    color:#404040;
-    padding-top: 3em;
+/* ----------------
+    typo
+------------------- */
+h1, h2, strong {
+    font-weight: 700;
 }
 h1 {
-    margin: 0;
-    font-family:"basic", sans-serif;
-    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0;
 }
-h1 span {
-    font-weight: initial;
+.accent-color{
+    color: #FFE600;
 }
-
-/* hero section */
-.hero-copy {
-    color: white;
-    width: 80%;
-    padding: 3em 0;
+.subtitle {
+    color: #EBEBEB;
 }
-.hero-copy h2 span {
-    color:#FFE600;
+/* ----------------
+    general layout
+------------------- */
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(150px, 500px) minmax(1em, 1fr);
 }
-.hero-copy p {
-    font-weight: 300;
-    line-height: 1.5em;
-}
-.hero-copy p span {
-    font-weight: 700;
-}
-button {
-    background-color:#FFE600;
-    border: none;
-    padding: .7em 2em;
-    margin-top: 2em;
-}
-button a{
-    text-decoration: none;
-    font-family: 'Montserrat';
-    color:#000000;
-    font-weight: 900;
+/* small screen */
+.hero>*,
+.info>*,
+.footer>* {
+    grid-column: 2/ span 1;
 }
 
-/* ----------- */
-/* ----MAIN--- */
-/* ----------- */
 
-main {
-    text-align: center;
+/* hero section  */
+.hero {
+    background-image: url(/img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 4em 0;
+}
+.hero-title,
+.subtitle {
     width: 70%;
-    margin: 2em auto;
 }
-
-.col {
-    padding: 1em 0;
-}
-.col h3 {
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 2em;
-}
-.col h3::after {
-    content: '';
-    width: 3em;
-    height: .25em;
-    position: absolute;
-    top: 1.5em;
-    left: 42%;
+.btn {
+    margin: 2em 0 0;
     background-color: #FFE600;
-}
-.col p {
-    line-height: 1.75em;
-}
-.col p span {
-    font-weight: 600;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    justify-self: flex-start;
 }
 
-footer {
+/* info section */
+.info {
+    padding: 2.5em 0 4em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.section-title {
+    margin: 1.5em 0;
+}
+.col p{
+    color:#404040;
+}
+
+/* footer */
+.footer {
     background-color: #EBEBEB;
     text-align: center;
-    padding: 2em;
-    color: rgba(0, 0, 0, 0.37);
-
+    display: grid;
+    grid-template-areas: 
+    ".social."
+    ".main.";
+    padding: 4em 0 0;
 }
-.footer-info {
-    width: 70%;
-    margin: 0 auto;
-
+.footer-main {
+    grid-area: main;
 }
-.footer-info p {
-    margin: 1em 0 4em;
-    line-height: 1.5em;
+.social-list {
+    grid-area: social;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
-.copyright {
-    font-size: .75rem;
-    margin: 0;
+.social-item {
+    margin: 0 .5em;
+}
+.social-link{
+    color: black;
+    font-size: 2rem;
+}
+.footer-main {
+    color: #404040;
+    opacity: .3;
+    width: 80%;
+    margin: auto;
+}
+.footer-fineprint {
+    margin: 4em 0;
 }
