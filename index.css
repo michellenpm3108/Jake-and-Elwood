@@ -43,6 +43,53 @@ h1 {
 .footer>* {
     grid-column: 2/-2;
 }
+/* header */
+header {
+    background-color: black;
+}
+.header-content {
+    display: flex;
+    grid-column: 2/-2;
+}
+.logo-link {
+    background-color: #FFE600;
+    padding-top: 2em;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #FFE600;
+}
+.close-nav-btn {
+    color: white;
+    border: 0;
+    background: none;
+    padding: .5em;
+    font-size: 3rem;
+    position: absolute;
+}
 
 /* hero section  */
 .hero {
