@@ -43,9 +43,10 @@ h1 {
 .footer>* {
     grid-column: 2/-2;
 }
-/* header */
+/* header & nav bar */
 header {
     background-color: black;
+
 }
 .header-content {
     display: flex;
@@ -64,6 +65,7 @@ header {
     right: 0;
     bottom: 0;
     transform: translateX(0);
+    transition: transform 250ms;
 }
 .nav-open {
     transform: translateX(-100%);
@@ -72,7 +74,6 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -89,12 +90,44 @@ header {
     color: #FFE600;
 }
 .close-nav-btn {
-    color: white;
+    color: #FFE600;
     border: 0;
     background: none;
     padding: .5em;
     font-size: 3rem;
+    cursor: pointer;
     position: absolute;
+}
+.open-nav-btn:hover,
+.open-nav-btn:focus {
+    color: #FFE600;
+}
+.open-nav-btn {
+    color: white;
+    border: 0;
+    background: none;
+    padding: .5em;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .open-nav-btn,
+    .close-nav-btn {
+        display: none;
+    }
+    .nav {
+        position: initial;
+    }
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .nav-link {
+        font-size: 1rem;
+        margin-left: 2em;
+    }
 }
 
 /* hero section  */
