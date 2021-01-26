@@ -44,10 +44,15 @@ h1 {
     grid-column: 2/-2;
 }
 /* header & nav bar */
-header {
+.header {
     background-color: black;
-
 }
+.header-home {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+}
+
 .header-content {
     display: flex;
     grid-column: 2/-2;
@@ -128,6 +133,9 @@ header {
         font-size: 1rem;
         margin-left: 2em;
     }
+    .header .nav {
+        background: transparent;
+    }
 }
 
 /* hero section  */
@@ -137,9 +145,11 @@ header {
     background-size: cover;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 4em 0;
+    padding: 8em 0 4em;
 }
-
+.hero > * {
+    margin-right: 20%;
+}
 .btn {
     margin: 2em 0 0;
     background-color: #FFE600;
