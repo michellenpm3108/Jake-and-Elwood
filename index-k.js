@@ -9,5 +9,3 @@ closeNav.addEventListener('click', () => {
 openNav.addEventListener('click', () => {
     nav.classList.add('nav-open')
 })
-
-console.log('Hi')
