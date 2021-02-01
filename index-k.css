@@ -56,58 +56,60 @@ header {
 }
 
 /* navigation */
-
-
 .nav {
     position: fixed;
-    background-color: black;
     width: 100%;
     top: 0;
     left: 100%;
-    right: 0;
+    right: 0; 
     bottom: 0;
+    background-color: black;
+    height: 100vh;
     transform: translateX(0);
     transition: transform 250ms;
 }
-.nav-open {
+.nav-open { 
     transform: translateX(-100%);
 }
 
 .nav-list {
     list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-}
-.nav-item {
-    font-size: 3rem;
+    justify-content: space-evenly;
+    height: 100%;
 }
 .nav-link {
     text-decoration: none;
-    color:white;
+    font-size: 2rem;
+    color: white;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #FFE600;
 }
 .close-nav-btn {
-    background: none;
-    color:#FFE600;
+    background-color: unset;
     font-size: 3rem;
-    padding: .5em;
     position: absolute;
-    border: none;
-}
-.open-nav-btn {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    padding: .5em;
-    margin-left: auto;
+    top: 4%;
+    left: 4%;
+    border:none;   
+    color: #FFE600;
     cursor: pointer;
 }
-
-
+.open-nav-btn {
+    background: 0;
+    border: 0;
+    color: white;
+    font-size: 2rem;
+    margin-left: auto;
+    padding: .5em;
+    cursor: pointer;
+}
 /* hero */
 .hero {
     background-image: url(/img/hero-bg.jpg);
