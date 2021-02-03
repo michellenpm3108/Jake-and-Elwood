@@ -12,7 +12,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #404040;
 }
-
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
 /* ----------------
     typo
 ------------------- */
@@ -168,6 +172,7 @@ h1 {
 }
 .section-title {
     margin: 1.5em 0;
+    color:#000000;
 }
 .col p{
     color:#404040;
@@ -236,5 +241,41 @@ h1 {
     }
     .social-item {
         padding: 0;
+    }
+}
+
+/* about page */
+.about>* {
+    grid-column: 2/-2;
+}
+.page-title {
+    text-align: center;
+    margin: 2em 0;
+}
+.page-title h1{
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.page-title p{
+    font-size: 1rem;
+}
+.main-text {
+    margin: 2em 0;
+}
+.main-text .section-title {
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .page-title{
+        grid-column: 2/-2;
+    }
+    .page-image {
+       grid-column: 2;
+    }
+    .main-text {
+        grid-column: 3/-2;
+        margin-top: 0;
     }
 }
