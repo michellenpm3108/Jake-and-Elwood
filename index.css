@@ -13,8 +13,6 @@ body {
     color: #404040;
 }
 img {
-    display: block;
-    margin: 0 auto;
     max-width: 100%;
 }
 /* ----------------
@@ -260,6 +258,9 @@ h1 {
 .page-title p{
     font-size: 1rem;
 }
+.page-image {
+    box-shadow: 5px 5px 0px black, 10px 10px 0 #FFE600;
+}
 .main-text {
     margin: 2em 0;
 }
@@ -278,4 +279,5 @@ h1 {
         grid-column: 3/-2;
         margin-top: 0;
     }
+
 }
