@@ -259,10 +259,12 @@ h1 {
 .about>* {
     grid-column: 2/-2;
 }
-
+.about {
+    padding: 1em 0 4em;
+}
 .page-title{
     text-align: center;
-    margin: 2em 0 .5em;
+    margin: 1em 0 .5em;
     color: #000000;
     font-size: 3rem;
     font-weight: 700;
@@ -307,6 +309,12 @@ h1 {
 }
 
 /* FORM */
+.contact>* {
+    grid-column: 2/-2;
+}
+.contact {
+    padding: 1em 0 4em;
+}
 form{
     display: grid;
 }
@@ -321,18 +329,24 @@ input {
 textarea {
     height: 5em;
 }
+.send-email {
+    color: black;
+    font-weight: 700;
+}
 .submit-btn {
     margin-left: auto;
 }
 
-@media (min-width: 600px) {
-    .secondary-text {
-        grid-column: 2/span 1;
-        grid-row: 
+@media (min-width: 700px) {
+    .left-column{
+        grid-column: 2;
     }
+
     .main-text {
         grid-column: 3/ span 2;
         grid-row: 3;
     }
-
+    .page-image { 
+        margin-bottom: 0;
+    }
 }
