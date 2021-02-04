@@ -160,6 +160,8 @@ h1 {
     color: #000000;
     font-weight: 700;
     justify-self: flex-start;
+    border: none;
+    font-family: 'Montserrat';
 }
 
 /* info section */
@@ -277,6 +279,7 @@ h1 {
 .page-subtitle{
     font-size: 1rem;
     margin-bottom: 2em;
+    text-align: center;
 }
 .page-image {
     box-shadow: 5px 5px 0px black, 10px 10px 0 #FFE600;
@@ -299,6 +302,37 @@ h1 {
     }
     .main-text {
         grid-column: 3/-2;
+    }
+
+}
+
+/* FORM */
+form{
+    display: grid;
+}
+label {
+    font-weight: 700;
+}
+input {
+    margin: .5em 0 1.5em; 
+    width: 100%;
+    height: 2.5em;
+}
+textarea {
+    height: 5em;
+}
+.submit-btn {
+    margin-left: auto;
+}
+
+@media (min-width: 600px) {
+    .secondary-text {
+        grid-column: 2/span 1;
+        grid-row: 
+    }
+    .main-text {
+        grid-column: 3/ span 2;
+        grid-row: 3;
     }
 
 }
