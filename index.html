@@ -4,56 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f511cb2312.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Home Page</title>
 </head>
 <body>
     <header  class="header header-home  main-grid">
-        <a href="index.html"><img class="logo-image" src="img/neutrovis_logo.png" alt=""></a>
-        <nav>
-            <ul>
-                <li class="list-item"><a href="index.html">home</a></li>
-                <li class="list-item"><a href="about.html">about us</a></li>
-                <li class="list-item"><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <a href="index.html"><img class="logo-image" src="img/neutrovis_logo.png" alt=""></a>
+            <button aria-label="open navigation" class="open-nav">&#9776;</button>
+            <!-- <nav>
+                <ul>
+                    <li class="list-item"><a href="index.html">home</a></li>
+                    <li class="list-item"><a href="about.html">about us</a></li>
+                    <li class="list-item"><a href="contact.html">contact</a></li>
+                </ul>
+            </nav> -->    
+        </div>
     </header>
 
     <main>
         <section class="hero main-grid">
-            <h1 class="section-title">Embrace a brand new year in the new normal</h1>
-            <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsam nobis aut architecto incidunt nisi voluptate totam odio delectus quasi.</p>
+            <h1 class="hero-title">Embrace a brand new year in the new normal</h1>
+            <p class="hero-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsam nobis aut architecto incidunt nisi voluptate totam odio delectus quasi.</p>
             <button class="btn btn-primary"><a href="contact.html">contact us</a></button>
         </section>
 
         <section class="info main-grid">
             <div class="col">
-                <h2 class="col-title">our brand</h2>
-                <p class="col-sub">NEUTROVIS is a hygience and cleaning brand with extra protective and anti bacterial solution. </p>
+                <h2 class="section-title">our brand</h2>
+                <p class="section-sub">NEUTROVIS is a hygience and cleaning brand with extra protective and anti bacterial solution. </p>
             </div>
             <div class="col">
-                <h2 class="col-title">our belief</h2>
-                <p class="col-sub">NEUTROVIS believes science and technology should not only play a role in environmental protection, but also neutralized the surrounding to made a safe environment.</p>
+                <h2 class="section-title">our belief</h2>
+                <p class="section-sub">NEUTROVIS believes science and technology should not only play a role in environmental protection, but also neutralized the surrounding to made a safe environment.</p>
             </div>
             <div class="col">
-                <h2 class="col-title">our mission</h2>
-                <p class="col-sub">NEUTROVIS is a outdoor companion and environment friendly brand for everyone without any worries about the excess chemical reaction of the products that caused allergic.</p>
+                <h2 class="section-title">our mission</h2>
+                <p class="section-sub">NEUTROVIS is a outdoor companion and environment friendly brand for everyone without any worries about the excess chemical reaction of the products that caused allergic.</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-text">
+    <footer class="footer main-grid">
+        <div class="footer-main">
             <img src="/img/neutrovis_logo.png" alt="" class="footer-logo">
-            <p class="footer-about"></p>
+            <p class="footer-text"></p>
             <p class="footer-fineprint"></p>
         </div>
         <div class="social-list">
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
