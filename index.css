@@ -8,8 +8,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #000000;
-    color:#FFFFFF; */
+    background-color: #881221;
+    color:#FFFFFF;
 }
 
 img {
@@ -30,16 +30,26 @@ img {
 
 /* HEADER */
 .header {
-    background-color: black;
+    background-color: #881221;
 }
 .logo-image {
     width: 20vw;
+    background-color: #FFE600;
+    padding-top: 2em;
 }
 .header-content{
     display: flex;
 }
 .open-nav{
-    background-color: black;
+    background: 0;
     border: none;
     color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* HERO SECTION */
+.hero-background{
+    width: 100%;
+    margin: 2em 0;
 }
