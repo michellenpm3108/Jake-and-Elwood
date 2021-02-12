@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@200;300;400;500;600;700&family=Nunito:wght@200;300;600;700;800;900&display=swap');
 * {
     box-sizing: border-box;
@@ -8,8 +8,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #881221;
-    color:#FFFFFF;
+    background-color: #3C3E36;
+    color:#F3F3F3;
+    line-height: 1.5;
 }
 
 img {
@@ -30,12 +31,12 @@ img {
 
 /* HEADER */
 .header {
-    background-color: #881221;
+    background-color: transparent;
+    position: absolute;
+    padding: 1em 0;
 }
 .logo-image {
-    width: 20vw;
-    background-color: #FFE600;
-    padding-top: 2em;
+    height: 10vh;
 }
 .header-content{
     display: flex;
@@ -46,6 +47,35 @@ img {
     color: white;
     cursor: pointer;
     margin-left: auto;
+    font-size: 2em;
+    color: #E9CD00;
 }
 
 /* HERO SECTION */
+.hero {
+    background-image: url(/img/monkey\ bg.jpg);
+    background-size: cover;
+    background-position: center; 
+    padding: 6em 0;
+}
+.hero-title {
+    margin-bottom: .5em;
+    width: 60%;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.2;
+}
+.hero-subtitle {
+    font-size: .75rem;
+    width: 50%;
+    margin: 0 0 3em;
+}
+.cta-link {
+    font-size: .75rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #E9CD00;
+    color: #E9CD00;
+    margin-right: auto;
+}
