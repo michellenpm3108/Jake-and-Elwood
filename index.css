@@ -24,7 +24,8 @@ img {
 }
 .header>*,
 .hero>*,
-.info>*,
+.expertises>*,
+.client-choose-us>*,
 .footer>* {
     grid-column: 2/-2;
 }
