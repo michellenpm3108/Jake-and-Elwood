@@ -10,12 +10,21 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #3C3E36;
     color:#F3F3F3;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 img {
-    
+    max-width: 100%;;
 }
+/* TYPHOGAPHY */
+.section-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    color: #32353C;
+    width: 60%;
+    line-height: 1;
+}
+
 
 /* LAYOUT */
 .main-grid {
@@ -26,10 +35,28 @@ img {
 .hero>*,
 .expertises>*,
 .client-choose-us>*,
+.clients-talk>*,
 .footer>* {
     grid-column: 2/-2;
 }
 
+.top-content {
+    margin-top: 2em;
+    padding-left: 40px;
+}
+.section-title {
+    position: relative;
+    margin-bottom: 1em;
+}
+.section-title:before {
+    content:"";
+    position: absolute;
+    left: -.75em;
+    top: .1em;
+    width: .4em;
+    height: 2.3em;
+    background-color: #E9CD00;
+}
 /* HEADER */
 .header {
     background-color: transparent;
@@ -79,4 +106,47 @@ img {
     border-bottom: 1px solid #E9CD00;
     color: #E9CD00;
     margin-right: auto;
+}
+
+/* EXPERTISE SECTION */
+.expertises {
+    background-color: #F0F1EC;
+    color: #3C3E36;
+}
+.col-right {
+    padding-left: 40px; 
+}
+.expertises-list {
+    list-style-type: none;
+    padding: 0;
+}
+.expertise {
+    font-size: 2rem;
+    font-family:'ubuntu',sans-serif ;
+    margin: 0;
+}
+.expertise::after {
+    content:"";
+    display: block;
+    background-color: #CB814C;
+    width: 5em;
+    height: .2em;
+}
+.expertises-item p {
+    margin-top: .2em;
+}
+
+.consultation-btn {
+    background-color: #E9CD00;
+    border: none;
+    padding: 1em 2.3em;
+    margin: 2em 0 4em;
+    border-radius: 10px;
+}
+.consultation-btn a{
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    color: #3C3E36;
+
 }
