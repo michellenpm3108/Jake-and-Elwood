@@ -24,7 +24,9 @@ img {
     width: 60%;
     line-height: 1;
 }
-
+.section-subtitle {
+    color: #3C3E36;
+}
 
 /* LAYOUT */
 .main-grid {
@@ -46,7 +48,7 @@ img {
 }
 .section-title {
     position: relative;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 .section-title:before {
     content:"";
@@ -112,6 +114,7 @@ img {
 .expertises {
     background-color: #F0F1EC;
     color: #3C3E36;
+    border-radius: 0 0 100px;
 }
 .col-right {
     padding-left: 40px; 
@@ -154,4 +157,25 @@ img {
 /* CLIENTS CHOOSE US */
 .client-choose-us {
     background-color: #CB814C;
+    border-radius: 0 0 0 100px;
+    padding: 2em 0 4em;
+}
+.client-choose-us .col-right {
+    display: none;
+}
+
+.reasons-list {
+    list-style-type: none;
+    color: #F3F3F3;
+}
+.reason-item {
+    padding: 0 40px;
+}
+.reason {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0;
+}
+.reason-item p {
+    margin-top: 0;
 }
